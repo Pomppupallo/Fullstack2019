@@ -1,0 +1,21 @@
+title Webpage
+
+kayttaja->selain:
+note left of selain
+kayttaja kirjottaa osoiteriville
+fullstack-exampleapp.herokuapp.com/notes
+end note
+selain->palvelin: GET fullstack-exampleapp.herokuapp.com/notes
+note left of palvelin
+  Tehdään pyyntö palvelimelle
+end note
+palvelin->selain: status 200 -notes
+palvelin->selain: status 200 -main.css
+palvelin->selain: status 200 -main.js
+palvelin->selain: status 200 -data.json
+
+note left of selain
+ Selain näyttää palvelimen palauttaman 
+ HTML:n jossa listattuna muistiinpanot 
+ ja mahdollisuus uuden lisäämiseen
+end note
