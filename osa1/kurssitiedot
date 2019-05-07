@@ -10,9 +10,9 @@ const Header = (props) => {
 const Content = (props) => {
     return (
         <div>
-            <p>
-                {props.kurssinimi} {props.kurssit}
-            </p>
+            <p> {props.part1} {props.exercises1} </p>
+            <p> {props.part2} {props.exercises2} </p>
+            <p> {props.part3} {props.exercises3} </p>
         </div>
     )
 }
@@ -37,15 +37,12 @@ const App = () => {
     return (
       <div>
         <Header course = {course} />
-        <Content kurssinimi = {part1} kurssit = {exercises1} />
-        <Content kurssinimi = {part2} kurssit = {exercises2} />
-        <Content kurssinimi = {part3} kurssit = {exercises3} />
+        <Content part1 = {part1} exercises1 = {exercises1} 
+                 part2 = {part2} exercises2 = {exercises2}
+                 part3 = {part3} exercises3 = {exercises3} />
         <Total eka = {exercises1} toka = {exercises2} kolmas = {exercises3} />
       </div>
     )
   }
   
   ReactDOM.render(<App />, document.getElementById('root'))
-
-
-
