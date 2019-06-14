@@ -1,3 +1,5 @@
+Import React from 'react'
+
 const Search = ({newSearch, handleSearchChange}) => {
     return(
       <p>Find countries
