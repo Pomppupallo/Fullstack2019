@@ -38,10 +38,9 @@ const DisplayCountry = ( {country, lippu} ) => {
 }
 
 
-const ShowList = ( {oneCountry, maat, lippu} ) => {
+const ShowList = ( {maat, lippu} ) => {
   
   const countryNames = maat.map(maa => maa.name)
-  console.log(oneCountry);
 
   if(maat.length > 10) {
     return(
@@ -77,15 +76,11 @@ const ShowList = ( {oneCountry, maat, lippu} ) => {
 const App = () => {
   const [ allCountries, setCountries ] = useState([])
   const [ newSearch, setNewSearch ] = useState('')
-  const [ oneCountry, setOneCountry ] = useState('')
   const baseUrl = 'https://restcountries.eu/rest/v2/all?fields=name;capital;population;alpha2Code;flag;languages'
   const search = newSearch.toLowerCase()
   const countries = allCountries.filter(country => country.name.toLowerCase().includes(search))
   let flagTag = null
   let flagImg = ''
-
-  const setInfo = (maa) =>
-    setOneCountry(maa)
 
   // If search gives only one country -- Get flag of that country
   if(countries.length === 1) {
