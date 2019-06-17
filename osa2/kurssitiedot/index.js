@@ -1,3 +1,5 @@
+//Kurssitiedot osa 2.5 erillinen moduuli
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Course from './components/Course'
