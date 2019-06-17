@@ -1,3 +1,5 @@
+// Puhelinluettelo step 12 (2.20)
+
 import React, { useState, useEffect } from 'react'
 import Filter from './components/Filter'
 import PersonForm from './components/PersonForm'
