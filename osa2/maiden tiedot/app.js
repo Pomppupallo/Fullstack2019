@@ -1,3 +1,5 @@
+//Maiden tiedot step 1 (2.12)
+
 import React, {useState, useEffect} from 'react';
 import axios from 'axios'
 import Search from './components/search'
